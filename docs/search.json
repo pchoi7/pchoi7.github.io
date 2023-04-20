@@ -4,7 +4,7 @@
     "href": "posts/example-blog-post/index.html",
     "title": "Hello Blog",
     "section": "",
-    "text": "from source import Perceptron\nThis is an example of the blog posts that you’ll submit as your primary form of learning demonstration in CSCI 0451. I created this post by modifying the file posts/example-blog-post/index.ipynb in VSCode. You can also use JupyterLab for this editing if you prefer. Finally, it is possible to write blog posts without using notebooks by writing .qmd files, as illustrated here."
+    "text": "from source import Perceptron\np = Perceptron()\n\nI did it!!\nnot implemented\nThis is an example of the blog posts that you’ll submit as your primary form of learning demonstration in CSCI 0451. I created this post by modifying the file posts/example-blog-post/index.ipynb in VSCode. You can also use JupyterLab for this editing if you prefer. Finally, it is possible to write blog posts without using notebooks by writing .qmd files, as illustrated here."
   },
   {
     "objectID": "posts/example-blog-post/index.html#math",
@@ -14,16 +14,23 @@
     "text": "Math\nIn addition to regular text using the Markdown specification, you can also write mathematics, enclosed between dollar signs. The syntax for writing math is very similar to the syntax used in the \\(\\LaTeX\\) markup language. For example, $f(x) \\approx y$ renders to \\(f(x) \\approx y\\). To place complex mathematical expressions on their own lines, use double dollar signs. For example, the expression\n$$\\mathcal{L}(a, b) = \\sum_{i = 1}^n (ax_i + b - y_i)^2$$\nrenders to:\n\\[\\mathcal{L}(a, b) = \\sum_{i = 1}^n (ax_i + b - y_i)^2\\;.\\]\nBehind the scenes, math is powered by the MathJax engine. For more on how to write math, check this handy tutorial and quick reference."
   },
   {
+    "objectID": "posts/TimnitGebru/index.html",
+    "href": "posts/TimnitGebru/index.html",
+    "title": "Timnit Gebru",
+    "section": "",
+    "text": "About Dr. Timnit Gebru\nDr. Timnit Gebru is a computer scientist who specializes machine learning and artificial intelligence. She cofounded a research organization alongside Rediet Abebe known as Black in AI, which seeks to speak out about the lack of diversity in the field of artificial intelligence. Many of her works address racial discrimination and gender bias. Dr. Gebru coauthored a paper wher research showed that facial recognition was less accurate in identifying people of color and women. This would mean that there would be discrimination against these groups. This led to another research by other computer scientists and found that in facial recognition, black women were 35% less likely to be recognized than white men, further proving Dr. Gebru’s argument. Dr. Gebru is a recognized voice in artificial intelligence because she continues to uncover the ethical issues of the field even if it negatively impacts her. For example, she and five others did an research and put their findings on a paper called “On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?” during her time at Google. Despite the opposition from the higer-ups, Gebru insisted that the paper be published, which led to her departure from the company. Regardless of these things, she continues to move forward with the effort the address social injustices in the field of AI through research and starting organizations like Black in AI and the Distributed Artificial Intelligence Research Institute.\n\nTutorial on Fairness, Accountability, Transparency, and Ethics (FATE) in Computer Vision\nIn Dr. Gebru’s talk, she speaks about how the field of computer vision is negatively affecting certain groups of people. She stated that computer vision is being utilized for things like the hiring process, surveillance, and policing. Although computer vision has its pros, there are also cons. For example, Dr. Gebru points out the use of face recognition in Maryland, where they used it to identify the Annapolis Capital Gazette shooter, and while this was a benefit, the police started to use it on photos to identify individuals at the Freddit Gray protests. In addition to surveillance, there are racial issues of computer vision. She noted that there were high disparity between black women and white men. Facial recognition was accurate when identifying white men but were much less accurate when identifying black women. Some companies believed that they did not have enough data to correctly identify certain groups of people such as people of the transgender community. As a result, they used videos of Transgender Youtubers without permission to enhance their data for facial/gender recognition.\nComputer vision algorithms can be useful, but it can cause a lot more harm than one might think.\n\n\nQuestion for Dr. Gebru\nWhat can companies do to prevent algorithmic biases in computer vision?"
+  },
+  {
     "objectID": "posts/new-test-post/index.html",
     "href": "posts/new-test-post/index.html",
-    "title": "Hello Blog",
+    "title": "Second Post",
     "section": "",
-    "text": "from source import Perceptron\nThis is an example of the blog posts that you’ll submit as your primary form of learning demonstration in CSCI 0451. I created this post by modifying the file posts/example-blog-post/index.ipynb in VSCode. You can also use JupyterLab for this editing if you prefer. Finally, it is possible to write blog posts without using notebooks by writing .qmd files, as illustrated here."
+    "text": "from source import Perceptron\np = Perceptron()\n\nI did it!!\nnot implemented\nThis is an example of the blog posts that you’ll submit as your primary form of learning demonstration in CSCI 0451. I created this post by modifying the file posts/example-blog-post/index.ipynb in VSCode. You can also use JupyterLab for this editing if you prefer. Finally, it is possible to write blog posts without using notebooks by writing .qmd files, as illustrated here."
   },
   {
     "objectID": "posts/new-test-post/index.html#math",
     "href": "posts/new-test-post/index.html#math",
-    "title": "Hello Blog",
+    "title": "Second Post",
     "section": "Math",
     "text": "Math\nIn addition to regular text using the Markdown specification, you can also write mathematics, enclosed between dollar signs. The syntax for writing math is very similar to the syntax used in the \\(\\LaTeX\\) markup language. For example, $f(x) \\approx y$ renders to \\(f(x) \\approx y\\). To place complex mathematical expressions on their own lines, use double dollar signs. For example, the expression\n$$\\mathcal{L}(a, b) = \\sum_{i = 1}^n (ax_i + b - y_i)^2$$\nrenders to:\n\\[\\mathcal{L}(a, b) = \\sum_{i = 1}^n (ax_i + b - y_i)^2\\;.\\]\nBehind the scenes, math is powered by the MathJax engine. For more on how to write math, check this handy tutorial and quick reference."
   },
@@ -32,13 +39,13 @@
     "href": "index.html",
     "title": "My Awesome CSCI 0451 Blog",
     "section": "",
-    "text": "Hello Blog\n\n\n\n\n\nA new blog post that I just made!\n\n\n\n\n\n\nMar 10, 2023\n\n\nPhil Chodrow\n\n\n\n\n\n\n  \n\n\n\n\nHello Blog\n\n\n\n\n\nAn example blog post illustrating the key techniques you’ll need to demonstrate your learning in CSCI 0451.\n\n\n\n\n\n\nJan 10, 2023\n\n\nPhil Chodrow\n\n\n\n\n\n\nNo matching items"
+    "text": "Timnit Gebru\n\n\n\n\n\nA new blog post that I just made!\n\n\n\n\n\n\nApr 20, 2023\n\n\nPaul Choi\n\n\n\n\n\n\n  \n\n\n\n\nSecond Post\n\n\n\n\n\nA new blog post that I just made!\n\n\n\n\n\n\nMar 10, 2023\n\n\nPhil Chodrow\n\n\n\n\n\n\n  \n\n\n\n\nHello Blog\n\n\n\n\n\nAn example blog post illustrating the key techniques you’ll need to demonstrate your learning in CSCI 0451.\n\n\n\n\n\n\nJan 10, 2023\n\n\nPhil Chodrow\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this blog"
+    "text": "About this blogg"
   }
 ]
