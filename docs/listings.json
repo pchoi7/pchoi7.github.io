@@ -2,7 +2,8 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/TimnitGebru/index.html",
+      "/posts/TimnitGebru/TG_final.html",
+      "/posts/Perceptron/perceptronNB.html",
       "/posts/new-test-post/index.html",
       "/posts/example-blog-post/index.html"
     ]
