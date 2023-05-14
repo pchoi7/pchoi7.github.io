@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/Logistic-Regression/LR.html",
       "/posts/TimnitGebru/TG_final.html",
       "/posts/Perceptron/perceptronNB.html",
       "/posts/new-test-post/index.html",
