@@ -881,7 +881,7 @@ Name: Region, dtype: int64</code></pre>
 </div>
 </div>
 <p>I will be using these features of the decision tree classifier: ‘Sex_FEMALE’, ‘Sex_MALE’, ‘Culmen Length (mm)’, ‘Body Mass (g)’ because they give us in 1.0 accuracy. Below is the proof that the score of the decision tree classifier using these features results in 1.0.</p>
-<div class="cell" data-execution_count="23">
+<div class="cell" data-execution_count="12">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Accuracy using Decision Tree Classifier on features 'cols'</span></span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>cols <span class="op">=</span> [<span class="st">'Culmen Length (mm)'</span>, <span class="st">'Body Mass (g)'</span>, <span class="st">'Sex_FEMALE'</span>, <span class="st">'Sex_MALE'</span>]</span>
 <span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>DTC.fit(X_train[cols], y_train)</span>
@@ -894,7 +894,7 @@ Name: Region, dtype: int64</code></pre>
 </section>
 <section id="evaluate-and-testing" class="level3">
 <h3 class="anchored" data-anchor-id="evaluate-and-testing">Evaluate and Testing</h3>
-<div class="cell" data-execution_count="25">
+<div class="cell" data-execution_count="13">
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>test_url <span class="op">=</span> <span class="st">"https://raw.githubusercontent.com/middlebury-csci-0451/CSCI-0451/main/data/palmer-penguins/test.csv"</span></span>
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>test <span class="op">=</span> pd.read_csv(test_url)</span>
 <span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -904,10 +904,10 @@ Name: Region, dtype: int64</code></pre>
 <span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>DTC_score <span class="op">=</span> DTC.score(X_test[cols], y_test)</span>
 <span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Score on test data using Decision Tree Classifier: "</span> <span class="op">+</span> <span class="bu">str</span>(DTC_score))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Score on test data using Decision Tree Classifier: 0.9117647058823529</code></pre>
+<pre><code>Score on test data using Decision Tree Classifier: 0.8970588235294118</code></pre>
 </div>
 </div>
-<div class="cell" data-execution_count="19">
+<div class="cell" data-execution_count="14">
 <div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Helper function for plotting (from blog post guide)</span></span>
 <span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> plot_regions(model, X, y):</span>
 <span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>    </span>
@@ -958,14 +958,11 @@ Name: Region, dtype: int64</code></pre>
 <span id="cb20-48"><a href="#cb20-48" aria-hidden="true" tabindex="-1"></a>      </span>
 <span id="cb20-49"><a href="#cb20-49" aria-hidden="true" tabindex="-1"></a>      plt.tight_layout()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell" data-execution_count="22">
+<div class="cell" data-execution_count="15">
 <div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot Culmen Length vs. Body Mass</span></span>
-<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>cols <span class="op">=</span> [<span class="st">'Culmen Length (mm)'</span>, <span class="st">'Body Mass (g)'</span>, <span class="st">'Sex_FEMALE'</span>, <span class="st">'Sex_MALE'</span>]</span>
-<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>DTC <span class="op">=</span> DecisionTreeClassifier()</span>
-<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>DTC.fit(X_test[cols], y_test)</span>
-<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a>plot_regions(DTC, X_test[cols], y_test)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>DTC.fit(X_test[cols], y_test)</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>plot_regions(DTC, X_test[cols], y_test)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <p><img src="penguins_files/figure-html/cell-16-output-1.png" class="img-fluid"></p>
 </div>
