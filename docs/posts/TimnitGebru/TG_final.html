@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Paul Choi">
+<meta name="dcterms.date" content="2023-04-20">
+<meta name="description" content="Blog Post about Dr.&nbsp;Gebru’s Talk">
 
-<title>My Awesome CSCI 0451 Blog</title>
+<title>My Awesome CSCI 0451 Blog - Timnit Gebru</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +26,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -60,35 +61,6 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <style>
     .quarto-title-block .quarto-title-banner,
     .quarto-title-block .quarto-title-banner h1,
@@ -99,25 +71,23 @@ ul.task-list li input[type="checkbox"] {
     .quarto-title-block .quarto-title-banner h6
     {
       color: white;
-background-image: url(img/landscape.png);
+background-image: url(../../img/landscape.png);
 background-size: cover;
     }
     </style>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">My Awesome CSCI 0451 Blog</span>
     </a>
   </div>
@@ -128,7 +98,7 @@ background-size: cover;
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html" rel="" target="">
+    <a class="nav-link" href="../../about.html" rel="" target="">
  <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
@@ -151,211 +121,74 @@ background-size: cover;
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">My Awesome CSCI 0451 Blog</h1>
-                      </div>
+    <div class="quarto-title column-body">
+      <h1 class="title">Timnit Gebru</h1>
+                  <div>
+        <div class="description">
+          Blog Post about Dr.&nbsp;Gebru’s Talk
+        </div>
+      </div>
+                </div>
   </div>
     
   
   <div class="quarto-title-meta">
 
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Paul Choi </p>
+            </div>
+    </div>
       
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">April 20, 2023</p>
+      </div>
+    </div>
     
       
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(6)</span></div></div></div>
+    
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
+<section id="about-dr.-timnit-gebru" class="level3">
+<h3 class="anchored" data-anchor-id="about-dr.-timnit-gebru">About Dr.&nbsp;Timnit Gebru</h3>
+<p>Dr.&nbsp;Timnit Gebru is a computer scientist who specializes machine learning and artificial intelligence. She cofounded a research organization alongside Rediet Abebe known as Black in AI, which seeks to speak out about the lack of diversity in the field of artificial intelligence. Many of her works address racial discrimination and gender bias. Dr.&nbsp;Gebru coauthored a paper wher research showed that facial recognition was less accurate in identifying people of color and women. This would mean that there would be discrimination against these groups. This led to another research by other computer scientists and found that in facial recognition, black women were 35% less likely to be recognized than white men, further proving Dr.&nbsp;Gebru’s argument. Dr.&nbsp;Gebru is a recognized voice in artificial intelligence because she continues to uncover the ethical issues of the field even if it negatively impacts her. For example, she and five others did an research and put their findings on a paper called “On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?” during her time at Google. Despite the opposition from the higer-ups, Gebru insisted that the paper be published, which led to her departure from the company. Regardless of these things, she continues to move forward with the effort the address social injustices in the field of AI through research and starting organizations like Black in AI and the Distributed Artificial Intelligence Research Institute.</p>
+</section>
+<section id="tutorial-on-fairness-accountability-transparency-and-ethics-fate-in-computer-vision" class="level3">
+<h3 class="anchored" data-anchor-id="tutorial-on-fairness-accountability-transparency-and-ethics-fate-in-computer-vision">Tutorial on Fairness, Accountability, Transparency, and Ethics (FATE) in Computer Vision</h3>
+<p>In Dr.&nbsp;Gebru’s talk, she speaks about how the field of computer vision is negatively affecting certain groups of people. She stated that computer vision is being utilized for things like the hiring process, surveillance, and policing. Although computer vision has its pros, there are also cons. For example, Dr.&nbsp;Gebru points out the use of face recognition in Maryland, where they used it to identify the Annapolis Capital Gazette shooter, and while this was a benefit, the police started to use it on photos to identify individuals at the Freddit Gray protests. In addition to surveillance, there are racial issues of computer vision. She noted that there were high disparity between black women and white men. Facial recognition was accurate when identifying white men but were much less accurate when identifying black women. Some companies believed that they did not have enough data to correctly identify certain groups of people such as people of the transgender community. As a result, they used videos of Transgender Youtubers without permission to enhance their data for facial/gender recognition.</p>
+<p>Computer vision algorithms can be useful, but it can cause a lot more harm than one might think.</p>
+<section id="question-for-dr.-gebru" class="level4">
+<h4 class="anchored" data-anchor-id="question-for-dr.-gebru">Question for Dr.&nbsp;Gebru</h4>
+<p>What can companies do to prevent algorithmic biases in computer vision?</p>
+</section>
+</section>
+<section id="summary-of-dr.-gebrus-talk" class="level3">
+<h3 class="anchored" data-anchor-id="summary-of-dr.-gebrus-talk">Summary of Dr.&nbsp;Gebru’s Talk</h3>
+<p>The main focus on Dr.&nbsp;Gebru’s talk on Monday was about AGI (artificial general intelligence). In her talk, she briefly goes over the first wave of eugenics, movement that sought to improve the human population through sterilization, selective breeding, etc. and also the second wave of eugenics. Dr.&nbsp;Gebru argues that the current growth of AGI is correlated to the second wave of eugenics. She mentions that both the first and the second wave of eugenics (mostly the latter) are issues that are starting to surface as the field of AGI grows because these AGI models select the traits of humans that it deems helpful to the human population.</p>
+<p>Dr.&nbsp;Gebru also explains that AGI is being used to create a utopian society. She describes that basic human needs will be met and the problems of the world such as poverty will be solved through the development in AGI. However, she argues that this utopian society that is promised through AGI will only benefit the rich. Another reason she links the development in AGI to second wave eugenics is due to its transhumanism ideology. Dr.&nbsp;Gebru notes that the field of AGI is being geared towards developing a society where humans and technology are integrated. Transhumanists believe that the integration of human and technology will improve society as a whole. Dr.&nbsp;Gebru raises concerns for this ideology and that only the privileged will be able to improve their living standards while others are left behind.</p>
+<p>I agree with the arguments of Dr.&nbsp;Gebru. Although I am fairly new to the ideas that Dr.&nbsp;Gebru has brought up in the talk, I believe I can agree with the fact that TESCREAL is ethically wrong even if they believe they are doing good for the future of the human population. AI may not seem like it is related to the second wave eugenics, but I can agree with Dr.&nbsp;Gebru with the fact that in the near future, their relation will become clearer.</p>
+</section>
+<section id="my-thoughts" class="level3">
+<h3 class="anchored" data-anchor-id="my-thoughts">My Thoughts</h3>
+<p>Attending the talk by Dr.&nbsp;Gebru was a great experience and the topic was very interesting. Before attending the talk, I had never heard any of the TESCREAL terms, but after attending, it helped me aware of what is going on in the field of artificial intelligence and that it is being pushed in this direction. I became interested and researched on my own time about how the second wave of eugenics is related to AGI. Something that I was sort of aware was transhumanism; the integration of man and machine is something that I have always disagreed with and after the talk I became certain of my opinion.</p>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1684641600000" data-listing-file-modified-sort="1684738401631" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
-<div class="thumbnail">
-<p><a href="./posts/Penguins/penguins.html"> <img src="./posts/Penguins/adeliePenguin.jpeg" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./posts/Penguins/penguins.html">
-<h3 class="no-anchor listing-title">
-Classifying Palmer Penguins
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-<p>Penguins blog post</p>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/Penguins/penguins.html">
-<div class="listing-date">
-May 21, 2023
-</div>
-<div class="listing-author">
-Paul Choi
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1683950400000" data-listing-file-modified-sort="1684738401641" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
-<div class="thumbnail">
-<p><a href="./posts/Logistic-Regression/LR.html"> <img src="./posts/Logistic-Regression/LR.png" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./posts/Logistic-Regression/LR.html">
-<h3 class="no-anchor listing-title">
-Logistic Regression
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-<p>Blog Post for Logistic Regression</p>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/Logistic-Regression/LR.html">
-<div class="listing-date">
-May 13, 2023
-</div>
-<div class="listing-author">
-Paul Choi
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1681963200000" data-listing-file-modified-sort="1684738401649" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5">
-<div class="thumbnail">
-<p><a href="./posts/TimnitGebru/TG_final.html"> <img src="./posts/TimnitGebru/TG.jpeg" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./posts/TimnitGebru/TG_final.html">
-<h3 class="no-anchor listing-title">
-Timnit Gebru
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-<p>Blog Post about Dr.&nbsp;Gebru’s Talk</p>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/TimnitGebru/TG_final.html">
-<div class="listing-date">
-Apr 20, 2023
-</div>
-<div class="listing-author">
-Paul Choi
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-listing-date-sort="1678424400000" data-listing-file-modified-sort="1684090258266" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
-<div class="thumbnail">
-<p><a href="./posts/Perceptron/perceptronNB.html"> <img src="./posts/Perceptron/image.jpg" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./posts/Perceptron/perceptronNB.html">
-<h3 class="no-anchor listing-title">
-Perceptron
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-<p>Perceptron Blog Post</p>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/Perceptron/perceptronNB.html">
-<div class="listing-date">
-Mar 10, 2023
-</div>
-<div class="listing-author">
-Paul Choi
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-listing-date-sort="1678424400000" data-listing-file-modified-sort="1681969836582" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
-<div class="thumbnail">
-<p><a href="./posts/new-test-post/index.html"> <img src="./posts/new-test-post/image.jpg" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./posts/new-test-post/index.html">
-<h3 class="no-anchor listing-title">
-Second Post
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-<p>A new blog post that I just made!</p>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/new-test-post/index.html">
-<div class="listing-date">
-Mar 10, 2023
-</div>
-<div class="listing-author">
-Phil Chodrow
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-listing-date-sort="1673326800000" data-listing-file-modified-sort="1681969836580" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
-<div class="thumbnail">
-<p><a href="./posts/example-blog-post/index.html"> <img src="./posts/example-blog-post/image.jpg" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./posts/example-blog-post/index.html">
-<h3 class="no-anchor listing-title">
-Hello Blog
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-<p>An example blog post illustrating the key techniques you’ll need to demonstrate your learning in CSCI 0451.</p>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/example-blog-post/index.html">
-<div class="listing-date">
-Jan 10, 2023
-</div>
-<div class="listing-author">
-Phil Chodrow
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
