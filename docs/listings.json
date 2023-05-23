@@ -2,6 +2,10 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/Project/model/test_xlnet.html",
+      "/posts/Project/model/lexicalrichness.html",
+      "/posts/Project/model/test.html",
+      "/posts/Project/projectReport.html",
       "/posts/Penguins/penguins1.html",
       "/posts/Logistic-Regression/LR.html",
       "/posts/TimnitGebru/TG_final.html",
